@@ -1,16 +1,20 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-// factorial of a num 5 => 5 * 4 * 3 *2 * 1
 
 int main () {
+    int num =2, i;
 
-    int num = 5, factorial=1;
+    for(i=2; i<num; i++){
 
-    for(num; num>1; num--){
-        factorial= factorial * num;
+        if(num%i==0){
+            cout << "not prime";
+            return 0;
+        }
+
     }
 
-    cout<< factorial;
+    cout<<"its prime";
+
 
 }
